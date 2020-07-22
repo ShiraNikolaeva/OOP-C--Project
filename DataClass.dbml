@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="STOREDB" Class="DataClassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-QPP8DIEG\SQLEXPRESS;Initial Catalog=STOREDB;Integrated Security=True" SettingsObjectName="Project_v2.Properties.Settings" SettingsPropertyName="STOREDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Item" Member="Items">
+    <Type Name="Item">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(8,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Qty_on_hand" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Item_Description" Type="System.String" DbType="Char(45) NOT NULL" CanBeNull="false" />
+      <Association Name="Item_Purchase" Member="Purchases" ThisKey="ID" OtherKey="Item_ID" Type="Purchase" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Purchase" Member="Purchases">
+    <Type Name="Purchase">
+      <Column Name="Purchase_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Account_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Item_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Qty" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Purchase_Date" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Total" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Association Name="Item_Purchase" Member="Item" ThisKey="Item_ID" OtherKey="ID" Type="Item" IsForeignKey="true" />
+      <Association Name="User_Account_Purchase" Member="User_Account" ThisKey="Account_ID" OtherKey="ID" Type="User_Account" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.User_Account" Member="User_Accounts">
+    <Type Name="User_Account">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="Char(40) NOT NULL" CanBeNull="false" />
+      <Column Name="User_Password" Type="System.String" DbType="Char(40) NOT NULL" CanBeNull="false" />
+      <Column Name="Balance" Type="System.Decimal" DbType="Decimal(8,2) NOT NULL" CanBeNull="false" />
+      <Association Name="User_Account_Purchase" Member="Purchases" ThisKey="ID" OtherKey="Account_ID" Type="Purchase" />
+    </Type>
+  </Table>
+</Database>

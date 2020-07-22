@@ -1,0 +1,27 @@
+D:\College\Spring 2020\OO programming\Solutions\Project\bin\Debug\Project v2.exe.config
+D:\College\Spring 2020\OO programming\Solutions\Project\bin\Debug\Project v2.exe
+D:\College\Spring 2020\OO programming\Solutions\Project\bin\Debug\Project v2.pdb
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project.csprojAssemblyReference.cache
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project_v2.LoginFail.resources
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project_v2.LogInSuccess.resources
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project_v2.Properties.Resources.resources
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project_v2.StoreApp.resources
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project.csproj.GenerateResource.cache
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project.csproj.CoreCompileInputs.cache
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project v2.exe
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project v2.pdb
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project_v2.CreateAccount.resources
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project_v2.Error.resources
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project_v2.LogIn.resources
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project_v2.ShowItems.resources
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project_v2.WelcomeMsg.resources
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project_v2.GetDates.resources
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project_v2.GetTotals.resources
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project_v2.MakePurchase.resources
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project_v2.PayBalance.resources
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project_v2.PayBalanceSuccess.resources
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project_v2.Receipt.resources
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project_v2.ShowAllPurchases.resources
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project_v2.ShowBalance.resources
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project_v2.ShowPurchasesBetweenDates.resources
+D:\College\Spring 2020\OO programming\Solutions\Project\obj\Debug\Project_v2.ShowPurchasesBetweenTotals.resources

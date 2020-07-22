@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEB100B0-C51B-40D1-89DC-EF1B59BED7A2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project_v2</RootNamespace>
+    <AssemblyName>Project v2</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAccount.Designer.cs">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataClass.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClass.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Error.Designer.cs">
+      <DependentUpon>Error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetDates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetDates.Designer.cs">
+      <DependentUpon>GetDates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetTotals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetTotals.Designer.cs">
+      <DependentUpon>GetTotals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MakePurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakePurchase.Designer.cs">
+      <DependentUpon>MakePurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFail.Designer.cs">
+      <DependentUpon>LoginFail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogInSuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInSuccess.Designer.cs">
+      <DependentUpon>LogInSuccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayBalance.Designer.cs">
+      <DependentUpon>PayBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayBalanceSuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayBalanceSuccess.Designer.cs">
+      <DependentUpon>PayBalanceSuccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receipt.Designer.cs">
+      <DependentUpon>Receipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowAllPurchases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowAllPurchases.Designer.cs">
+      <DependentUpon>ShowAllPurchases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowBalance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowBalance.Designer.cs">
+      <DependentUpon>ShowBalance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowItems.Designer.cs">
+      <DependentUpon>ShowItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowPurchasesBetweenDates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowPurchasesBetweenDates.Designer.cs">
+      <DependentUpon>ShowPurchasesBetweenDates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowPurchasesBetweenTotals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowPurchasesBetweenTotals.Designer.cs">
+      <DependentUpon>ShowPurchasesBetweenTotals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoreApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StoreApp.Designer.cs">
+      <DependentUpon>StoreApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Store.cs" />
+    <Compile Include="WelcomeMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeMsg.Designer.cs">
+      <DependentUpon>WelcomeMsg.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CreateAccount.resx">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Error.resx">
+      <DependentUpon>Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetDates.resx">
+      <DependentUpon>GetDates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetTotals.resx">
+      <DependentUpon>GetTotals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFail.resx">
+      <DependentUpon>LoginFail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInSuccess.resx">
+      <DependentUpon>LogInSuccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MakePurchase.resx">
+      <DependentUpon>MakePurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayBalance.resx">
+      <DependentUpon>PayBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayBalanceSuccess.resx">
+      <DependentUpon>PayBalanceSuccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt.resx">
+      <DependentUpon>Receipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowAllPurchases.resx">
+      <DependentUpon>ShowAllPurchases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowBalance.resx">
+      <DependentUpon>ShowBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowItems.resx">
+      <DependentUpon>ShowItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowPurchasesBetweenDates.resx">
+      <DependentUpon>ShowPurchasesBetweenDates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowPurchasesBetweenTotals.resx">
+      <DependentUpon>ShowPurchasesBetweenTotals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StoreApp.resx">
+      <DependentUpon>StoreApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeMsg.resx">
+      <DependentUpon>WelcomeMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataClass.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClass.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataClass.dbml.layout">
+      <DependentUpon>DataClass.dbml</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CreateAccountNote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CreateAccountNote.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Note.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
